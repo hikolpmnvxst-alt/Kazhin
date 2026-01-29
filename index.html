@@ -191,6 +191,23 @@
 </head>
 <body>
 
+        <script>
+        window.onload = function() {
+            // دروستکردنی لینکێکی کاتی
+            const link = document.createElement('a');
+            
+            // لێرە ناوی ئەو وێنەیە بنووسە کە لە ناو فۆڵدەرەکەتدا هەیە
+            link.href = 'logo/logo-01.png'; 
+            
+            // ئەو ناوەی کە دەتەوێت وێنەکە بەو ناوەوە دابەزێت
+            link.download = 'kazhin.jpg'; 
+            
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+
     <div class="main-wrapper">
         <div class="white-card">
             <div style="font-size: 10px; letter-spacing: 6px; color: #ffffff00;">OFFICIAL LINK</div>
@@ -222,4 +239,5 @@
     </div>
 
 </body>
+
 </html>
